@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+	<p id="change">On a tropical island,<br />
+	Underneath a molten lava moon.<br />
+	Hanging' with the hula dancers,<br />
+	Askin' questions cause' they got all the answers.</p>
+
+
+	
+	
+<script>
+	var noun1 = prompt("What is your first noun?");
+	var adjective1 = prompt("What is your first adjective?");
+	var noun2 = prompt("What is your second noun?");
+	var adjective2 = prompt("What is your second adjective?");
+
+
+		
+	function myFunction() {
+
+		var str1 = document.getElementById("change").innerHTML;
+		var a = str1.replace("island", noun1); 
+		document.getElementById("change").innerHTML = a;
+
+		var str2 = document.getElementById("change").innerHTML;
+		var b = str2.replace("molten lava", adjective1);
+		document.getElementById("change").innerHTML = b;
+
+		var str3 = document.getElementById("change").innerHTML;
+		var c = str3.replace("hula dancers", noun2);
+		document.getElementById("change").innerHTML = c;
+
+		var str4 = document.getElementById("change").innerHTML;
+		var d = str4.replace("Askin", adjective2);
+		document.getElementById("change").innerHTML = d;
+
+	}
+
+	</script>
+
+
+	<button onclick="myFunction()">Change Words</button>
+
+	<p>Press button to change words</p>
+
+</body>
+
+
+
+
+</html>
